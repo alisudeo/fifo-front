@@ -1,0 +1,72 @@
+<!doctype HTML>
+<html lang="pt">
+  <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel='stylesheet' href='../layouts/global.css'>
+        <link rel='stylesheet' href='../layouts/modal.css'>
+        <link rel='stylesheet' href='../layouts/header.css'>
+        <link rel='stylesheet' href='../layouts/bottom-button.css'>
+        <link rel='stylesheet' href='../layouts/game-detail.css'>
+        <script src='../layouts/modal.js'></script>
+        <title>Game</title>
+    </head>
+    <body>
+        <div id='modal-container'>
+            <div id='modal' align='center'>
+                <p id='modal-title'>Tem certeza que deseja sair?</p>
+                <select id='modal-select'>
+                    <option>Option</option>
+                </select>
+                <button id='modal-button-1'>Option</button>
+                <button id='modal-button-2'>Option</button>
+                <button id='modal-button-3'>Option</button>
+            </div>
+        </div>
+        <div id='page-container'>
+            <div id='header'>
+                <img src='../assets/img/backArrow.png'>
+                <img src='../assets/img/logo.png'>
+                <img>
+            </div>
+            <div id='on-going'>
+                <p>Game</p>
+                <!--<p>Status:<a onclick='optionModal(1)'>partida 1v1</a></p>-->
+                <p>Status: sem partida ativa.</p>
+            </div>
+            <div class='line-scroll'>
+                <p>Sem usuários em partida.</p>
+                <!--<div class='line-user-holder playing-user'>
+                    <img/>
+                    <div>
+                        <p>Name</p>
+                    </div>
+                </div>-->
+            </div>
+            <div id='line'>
+                <p>Fila atual: 0 pessoas</p>
+            </div>
+            <div class='line-scroll'>
+                <p>Sem usuários em fila.</p>
+                <!--<div class='line-user-holder waiting-user'>
+                    <img/>
+                    <div>
+                        <p>Name</p>
+                    </div>
+                </div>-->
+            </div>
+            <div align='center' id='bottom-action'>
+                <button id='action-button' class='green-button'>Entrar na fila</button>
+                <!--<button id='action-button' class='red-button' onclick='optionModal(3)'>Sair da fila</button>-->
+                <!--<button id='action-button' class='red-button' onclick='optionModal(4)'>Terminar partida</button>-->
+                <div class='icon red-button'>
+                    <img src='../assets/img/homeSelected.png'>
+                </div>
+                <div class='icon'>
+                    <img src='../assets/img/user.png'>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
