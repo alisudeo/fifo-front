@@ -8,6 +8,15 @@ function closeModal(){
     document.location.reload();
 }
 
+function openModal(){
+    
+    document.getElementById('modal-container').style.background = 'rgba(0, 0, 0, 0.2)';
+    document.getElementById('modal-container').style.display = 'flex';
+    setTimeout(() => {
+        document.getElementById('modal').style.opacity = '1';
+    }, 10);
+}
+
 function optionModal(x){
     let btnOne = document.getElementById('modal-button-1');
     let btnTwo = document.getElementById('modal-button-2');
@@ -78,4 +87,6 @@ function optionModal(x){
 
         btnThree.style.display = 'none';
     }
+
+    openModal();
 }
