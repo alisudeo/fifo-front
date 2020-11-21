@@ -78,6 +78,4 @@ function optionModal(x){
 
         btnThree.style.display = 'none';
     }
-
-    openModal();
 }

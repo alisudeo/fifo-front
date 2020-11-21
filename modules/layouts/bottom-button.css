@@ -40,6 +40,8 @@
 }
 
 #bottom-action {
-  width: 100%;
-  position: sticky;
+  height: 21vh;
+  width: 90%;
+  position: fixed;
+  bottom: 0;
 }
