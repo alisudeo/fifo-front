@@ -10,14 +10,16 @@
         <link rel='stylesheet' href='../layouts/bottom-button.css'>
         <link rel='stylesheet' href='../layouts/game-detail.css'>
         <script src='../layouts/modal.js'></script>
-        <title>Game</title>
+        <title>Playstation 5</title>
     </head>
     <body>
         <div id='modal-container'>
             <div id='modal' align='center'>
                 <p id='modal-title'>Tem certeza que deseja sair?</p>
                 <select id='modal-select'>
-                    <option>Option</option>
+                    <option>Solo</option>
+                    <option>1v1</option>
+                    <option>2v2</option>
                 </select>
                 <button id='modal-button-1'>Option</button>
                 <button id='modal-button-2'>Option</button>
@@ -26,12 +28,14 @@
         </div>
         <div id='page-container'>
             <div id='header'>
-                <img src='../assets/img/backArrow.png'>
-                <img src='../assets/img/logo.png'>
-                <img src='../assets/img/person-example.jpg'>
+                <a href="home.html">
+                    <img id='back-arrow' src='../assets/img/backArrow.png'>
+                </a>
+                <img  id='logo' src='../assets/img/logo.png'>
+                <img id='user-icon' src='../assets/img/person-example.jpg'>
             </div>
             <div id='on-going'>
-                <p>Game</p>
+                <p>Playstation 5</p>
                 <!--<p>Status: sem partida ativa.</p>-->
                 <p>Status:<a onclick='optionModal(1)'>Solo</a></p>
             </div>
@@ -58,9 +62,9 @@
             </div>
         </div>
         <div align='center' id='bottom-action'>
-            <button id='action-button' class='green-button'>Entrar na fila</button>
+            <!--<button id='action-button' class='green-button'>Entrar na fila</button>-->
             <!--<button id='action-button' class='red-button' onclick='optionModal(3)'>Sair da fila</button>-->
-            <!--<button id='action-button' class='red-button' onclick='optionModal(4)'>Terminar partida</button>-->
+            <button id='action-button' class='red-button' onclick='optionModal(4)'>Terminar partida</button>
             <a href='home.html'>
                 <div class='icon red-button'>
                     <img src='../assets/img/homeSelected.png'>
